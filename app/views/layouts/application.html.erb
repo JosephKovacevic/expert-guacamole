@@ -7,8 +7,17 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
+  
+  
+  
+  <body class="w3-container w3-light-blue">
+    <div class="w3-bar w3-border w3-light-green">
+      <a href="/users" class="w3-bar-item w3-button w3-hover-red">Users</a>
+      <a href="/my_pages/about" class="w3-bar-item w3-button w3-hover-green">About</a>
+      <a href="/my_pages/help" class="w3-bar-item w3-button w3-hover-blue">Help</a>
+      <a href="/my_pages/home" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+  </div>
+    
     <%= yield %>
   </body>
 </html>
